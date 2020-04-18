@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoGridPhoto</string>
+    <string name="next_page">Next Page</string>
+    <string name="content_description">Content Description</string>
+</resources>

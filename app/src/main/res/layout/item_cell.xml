@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/cellImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="0.5dp"
+        android:background="@color/colorLightGray"
+        android:contentDescription="@string/content_description"
+        />
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/cellImageView"
+        app:layout_constraintBottom_toBottomOf="@id/cellImageView"
+        app:layout_constraintVertical_bias="0.2"
+        tool:text="ID"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/idTextView"
+        app:layout_constraintStart_toStartOf="@id/cellImageView"
+        app:layout_constraintEnd_toEndOf="@id/cellImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tool:text="title"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
